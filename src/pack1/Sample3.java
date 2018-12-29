@@ -25,8 +25,9 @@ public class Sample1 {
 			System.out.println("Iam not in  to the home page");
 		}
 		
-		String str1=driver.findElement(By.id("RoundTrip")).getAttribute("name");
-		System.out.println(str1);
+		String str12=driver.findElement(By.id("RoundTrip")).getAttribute("name");
+		System.out.println(str12);
+		
 		
 		if (driver.findElement(By.id("OneWay")).isSelected()) {
 			System.out.println("one Way is already selected");

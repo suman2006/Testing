@@ -15,6 +15,9 @@ public class Sample1 {
 		driver.manage().window().maximize();
 		driver.manage().window().maximize();
 		
+		driver.manage().window().maximize();
+		driver.manage().window().maximize();
+		
 		String str=driver.findElement(By.xpath("//*[@id='SearchForm']/h1")).getText();
 		if(str.equals("Searchflights")){
 			System.out.println("Iam in to the home page");

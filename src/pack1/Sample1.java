@@ -13,6 +13,7 @@ public class Sample1 {
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.cleartrip.com/");
 		driver.manage().window().maximize();
+		driver.manage().window().maximize();
 		
 		String str=driver.findElement(By.xpath("//*[@id='SearchForm']/h1")).getText();
 		if(str.equals("Searchflights")){

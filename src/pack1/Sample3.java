@@ -28,7 +28,7 @@ public class Sample1 {
 		String str1=driver.findElement(By.id("RoundTrip")).getAttribute("name");
 		System.out.println(str1);
 		
-		if (driver.findElement(By.id("OneWay")).isSelected()) {
+		if (driver.findElement(By.id("OneWay1")).isSelected()) {
 			System.out.println("one Way is already selected");
 		}
 		
@@ -42,13 +42,13 @@ public class Sample1 {
 			
 		}
 		
-		driver.findElement(By.id("OneWay")).click();
+		driver.findElement(By.id("OneWay1")).click();
 		Thread.sleep(3000);
-		driver.findElement(By.id("RoundTrip")).click();
+		driver.findElement(By.id("RoundTrip1")).click();
 		Thread.sleep(3000);
-		driver.findElement(By.id("FromTag")).sendKeys("Hyderabad, IN - Rajiv Gandhi International (HYD)");
+		driver.findElement(By.id("FromTag1")).sendKeys("Hyderabad, IN - Rajiv Gandhi International (HYD)");
 		Thread.sleep(3000);
-		driver.findElement(By.id("ToTag")).sendKeys("Visakhapatnam, IN - Vishakhapatnam (VTZ)");
+		driver.findElement(By.id("ToTag1")).sendKeys("Visakhapatnam, IN - Vishakhapatnam (VTZ)");
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//*[@id='ORtrip']/section[2]/div[1]/dl/dd/div/a/i")).click();
 		driver.findElement(By.xpath("//*[@id='ui-datepicker-div']/div[1]/table/tbody/tr[5]/td[6]/a")).click();
